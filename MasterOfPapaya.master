@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterOfPapaya.master.cs" Inherits="MasterOfPapaya" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- responsive to mobil devices-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder> 
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />   
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class=" bg-warning">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- provides a full width container-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Papaya.aspx">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Recipes.aspx">Recipes</a></li>
+                        <li><a href="AboutUs.aspx">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div>
+            <div class="container">
+                <!-- provides a fixed width container-->
+                <div class="jumbotron" style="border: 1px solid #ccc; box-shadow: 0px 2px 5px #ccc;">                  
+                    <h1><span class=" text-green">PAPAYA RECIPE</span></h1>
+                    <h2><span class=" text-coffee">Welcome to our yummy website!</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row content">
+                <div class="col-sm-2 sidenav">
+                    <p><a href="#">Link</a></p>
+                    <p><a href="#">Link</a></p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <div class="col-sm-8 text-left">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="col-sm-2 sidenav">
+                    <div class="well">
+                        <p>ADS</p>
+                    </div>
+                    <div class="well">
+                        <p>ADS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-center">
+            <p style="background-color: #006699; font-family: 'Bell MT'">All rights reserved.</p>
+        </footer>
+        </div>
+    </form>
+</body>
+</html>
